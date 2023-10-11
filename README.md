@@ -8,7 +8,7 @@ Many web, mobile, geospatial, and analytics applications use PostgreSQL as their
 ## How to run the REST API
 Get this project from Github
 ``` 
-git clone https://github.com/DzmitryPihulski/
+git clone https://github.com/DzmitryPihulski/PosgreSQL-FastAPI
  
 ```
 
