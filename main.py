@@ -51,7 +51,7 @@ def get_an_item(item_id: int):
     return item
 
 
-@app.get('/users_items/{user_id}',
+@app.get('/user_items/{user_id}',
          response_model=List[Item],
          status_code=status.HTTP_200_OK)
 def get_user_items(user_id: int):
@@ -70,7 +70,7 @@ def get_user_items(user_id: int):
 
 # POST METHODS
 @app.post('/adduser', status_code=status.HTTP_201_CREATED)
-def create_an_user(user: User):
+def create_a_user(user: User):
     new_user = db.query(models.User).filter(models.User.id == user.id).first()
 
     if new_user is not None:
@@ -91,7 +91,7 @@ def create_an_user(user: User):
     return new_user
 
 
-@app.post('/additems', response_model=Item,
+@app.post('/additem', response_model=Item,
           status_code=status.HTTP_201_CREATED)
 def create_an_item(item: Item):
     user = db.query(models.User).filter(models.User.id == item.user_id).first()
