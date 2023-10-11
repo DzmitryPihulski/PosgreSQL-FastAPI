@@ -30,7 +30,7 @@ We have items from Items table that belong to the specific users from Users tabl
 ## How to run the REST API
 Get this project from Github
 ``` 
-git clone https://github.com/DzmitryPihulski/
+git clone https://github.com/DzmitryPihulski/PosgreSQL-FastAPI
  
 ```
 
